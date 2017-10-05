@@ -1,5 +1,6 @@
 package cn.edu.swpu.cins.dataCastle.service;
 
+import cn.edu.swpu.cins.dataCastle.enums.UserEnum;
 import cn.edu.swpu.cins.dataCastle.model.view.GroupWithMemberName;
 
 /**
@@ -7,5 +8,5 @@ import cn.edu.swpu.cins.dataCastle.model.view.GroupWithMemberName;
  */
 public interface GroupService {
 
-    void addGroup(GroupWithMemberName groupWithMemberName);
+    UserEnum addGroup(GroupWithMemberName groupWithMemberName);
 }

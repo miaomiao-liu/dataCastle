@@ -13,13 +13,11 @@ public class User {
     private String email;
     private int enable;
 
-    public User(int id, int groupId, String username, String password, String email, int enable) {
+    public User(int id, String username, String password, String email) {
         this.id = id;
-        this.groupId = groupId;
         this.username = username;
         this.password = password;
         this.email = email;
-        this.enable = enable;
     }
 
     public User() {

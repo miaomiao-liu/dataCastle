@@ -26,4 +26,26 @@
 
     </update>
 
+    <select id="selectUser" parameterType="String" resultType="cn.edu.swpu.cins.dataCastle.model.property.User">
+
+        select * from user
+        WHERE username = #{username};
+
+    </select>
+
+    <select id="existEmail" parameterType="String" resultType="cn.edu.swpu.cins.dataCastle.model.property.User">
+
+        select * from user
+        WHERE email = #{email};
+
+    </select>
+
+    <update id="updateGroupId">
+
+        UPDATE user
+        SET group_id = #{groupId}
+        WHERE username = #{username}
+
+    </update>
+
 </mapper>

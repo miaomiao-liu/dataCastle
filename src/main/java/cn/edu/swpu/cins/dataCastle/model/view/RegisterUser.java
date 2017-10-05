@@ -7,6 +7,7 @@ public class RegisterUser {
     private String username;
     private String password;
     private String email;
+    private int enable;
 
     public RegisterUser() {
     }
@@ -39,5 +40,13 @@ public class RegisterUser {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public int getEnable() {
+        return enable;
+    }
+
+    public void setEnable(int enable) {
+        this.enable = enable;
     }
 }

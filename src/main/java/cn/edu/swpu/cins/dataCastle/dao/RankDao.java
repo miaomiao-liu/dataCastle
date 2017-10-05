@@ -1,6 +1,8 @@
 package cn.edu.swpu.cins.dataCastle.dao;
 
+import cn.edu.swpu.cins.dataCastle.model.property.Rank;
 import cn.edu.swpu.cins.dataCastle.model.view.ScoreDate;
+import cn.edu.swpu.cins.dataCastle.model.view.ScoreRank;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -15,5 +17,7 @@ public interface RankDao {
 
    ScoreDate selectRank(int groupId);
 
-   List<ScoreDate> selectRankList();
+   List<ScoreRank> allRankList();
+
+   int add
 }

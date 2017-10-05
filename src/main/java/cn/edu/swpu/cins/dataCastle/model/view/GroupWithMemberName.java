@@ -1,13 +1,16 @@
 package cn.edu.swpu.cins.dataCastle.model.view;
 
+
+import java.util.List;
+import java.util.Set;
+
 /**
  * Created by miaomiao on 17-9-28.
  */
 public class GroupWithMemberName {
 
     private String groupName;
-    private String memberOne;
-    private String memberTwo;
+    private List<String> groupMembers;
 
     public String getGroupName() {
         return groupName;
@@ -17,19 +20,11 @@ public class GroupWithMemberName {
         this.groupName = groupName;
     }
 
-    public String getMemberOne() {
-        return memberOne;
+    public List<String> getGroupMembers() {
+        return groupMembers;
     }
 
-    public void setMemberOne(String memberOne) {
-        this.memberOne = memberOne;
-    }
-
-    public String getMemberTwo() {
-        return memberTwo;
-    }
-
-    public void setMemberTwo(String memberTwo) {
-        this.memberTwo = memberTwo;
+    public void setGroupMembers(List<String> groupMembers) {
+        this.groupMembers = groupMembers;
     }
 }

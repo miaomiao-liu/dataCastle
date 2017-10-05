@@ -2,6 +2,7 @@ package cn.edu.swpu.cins.dataCastle.controller;
 
 import cn.edu.swpu.cins.dataCastle.model.view.LoginUser;
 import cn.edu.swpu.cins.dataCastle.model.view.RegisterUser;
+import cn.edu.swpu.cins.dataCastle.model.view.SignInResult;
 import cn.edu.swpu.cins.dataCastle.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -29,14 +30,14 @@ public class AuthController {
         Map<Boolean,String> map = new HashMap();
         map = authService.addUser(registerUser);
         if(map.isEmpty()) {
-            return new ResponseEntity<Object>( HttpStatus.OK);
+            return new ResponseEntity<Object>("注册成功，请激活你的邮箱",HttpStatus.OK);
         }else {
             return new ResponseEntity<Object>(map, HttpStatus.OK);
         }
     }
 
-    public ResponseEntity<?> login(@RequestBody LoginUser loginUser){
-
-        return null;
+    @PostMapping("/login")
+    public SignInResult login(@RequestBody LoginUser loginUser){
+        return authService.login(loginUser);
     }
 }

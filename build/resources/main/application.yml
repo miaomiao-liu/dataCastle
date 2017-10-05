@@ -8,6 +8,18 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/dataCastle?useUnicode=true&characterEncoding=utf8&useSSL=false
 
+  mail:
+      host: smtp.163.com
+      username: 18280351947@163.com
+      password: xiangni2012
+      properties:
+       mail:
+        smtp:
+         auth: true
+         starttls:
+          enable: true
+          required: true
+
 server:
   port: 8080
 
@@ -27,3 +39,5 @@ jwt:
   expiration: 8640000
   tokenHead: "Bearer "
 
+dataCastle:
+  location: /home/miaomiao/download/multipartFile

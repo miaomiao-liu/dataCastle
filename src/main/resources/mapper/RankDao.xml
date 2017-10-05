@@ -12,9 +12,9 @@
 
     </select>
 
-    <select id="selectRankList">
+    <select id="allRankList">
 
-        SELECT score,date
+        SELECT *
         FROM rank
 
     </select>

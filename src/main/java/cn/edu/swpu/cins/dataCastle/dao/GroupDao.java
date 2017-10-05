@@ -13,6 +13,6 @@ public interface GroupDao {
 
     int addGroup(Group group);
 
-    int selectGroup(String groupName);
+    String selectGroup(int groupId);
 
 }
