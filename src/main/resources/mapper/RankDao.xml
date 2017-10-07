@@ -4,11 +4,11 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.edu.swpu.cins.dataCastle.dao.RankDao">
 
-    <select id="selectRank" parameterType="int">
+    <select id="selectRank" parameterType="int"  resultType="cn.edu.swpu.cins.dataCastle.model.view.ScoreDate">
 
         SELECT score,date
         FROM rank
-        WHERE id = #{id}
+        WHERE group_id = #{groupId}
 
     </select>
 
@@ -18,5 +18,25 @@
         FROM rank
 
     </select>
+
+    <insert id="addDate">
+
+        INSERT INTO rank
+        (group_id,
+        date
+        )VALUES (
+        #{groupId},
+        #{date}
+        )
+
+    </insert>
+
+    <update id="updateDate">
+
+        UPDATE rank
+        SET date = #{date}
+        WHERE group_id = #{groupId}
+
+    </update>
 
 </mapper>

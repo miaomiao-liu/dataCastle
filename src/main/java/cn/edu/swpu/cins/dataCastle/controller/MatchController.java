@@ -28,7 +28,7 @@ public class MatchController {
     }
 
 
-    @PostMapping("upload")
+    @PostMapping("/upload")
     public Map<Boolean, String> upload(@RequestParam MultipartFile multipartFile,
                                        @RequestParam String username){
         return fileService.upload(multipartFile,username);

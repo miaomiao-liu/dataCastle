@@ -12,13 +12,14 @@
     <schema id="6" parent="1" name="performance_schema"/>
     <schema id="7" parent="1" name="sys"/>
     <schema id="8" parent="1" name="test"/>
-    <table id="9" parent="2" name="group"/>
+    <table id="9" parent="2" name="group_table"/>
     <table id="10" parent="2" name="rank"/>
     <table id="11" parent="2" name="user"/>
     <column id="12" parent="9" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="13" parent="9" name="group_name">
       <Position>2</Position>
@@ -32,6 +33,7 @@
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="16" parent="10" name="group_id">
       <Position>2</Position>
@@ -53,6 +55,7 @@
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="21" parent="11" name="group_id">
       <Position>2</Position>
@@ -64,15 +67,15 @@
     </column>
     <column id="23" parent="11" name="password">
       <Position>4</Position>
-      <DataType>varchar(45)|0</DataType>
+      <DataType>varchar(255)|0</DataType>
     </column>
-    <column id="24" parent="11" name="mail">
-      <Position>5</Position>
-      <DataType>varchar(45)|0</DataType>
-    </column>
-    <column id="25" parent="11" name="enable">
+    <column id="24" parent="11" name="enable">
       <Position>6</Position>
       <DataType>int(5)|0</DataType>
+    </column>
+    <column id="25" parent="11" name="email">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
     </column>
     <key id="26" parent="11" name="PRIMARY">
       <ColNames>id</ColNames>

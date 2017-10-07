@@ -8,12 +8,14 @@ import cn.edu.swpu.cins.dataCastle.model.property.User;
 import cn.edu.swpu.cins.dataCastle.model.view.GroupWithMemberName;
 import cn.edu.swpu.cins.dataCastle.service.GroupService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by miaomiao on 17-9-28.
  */
+@Service
 public class GroupServiceImpl implements GroupService {
 
     @Autowired

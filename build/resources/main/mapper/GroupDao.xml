@@ -6,18 +6,19 @@
 
     <insert id="addGroup" useGeneratedKeys="true" keyProperty="id" parameterType="cn.edu.swpu.cins.dataCastle.model.property.Group">
 
-        insert into group (group_name)
-        values (#{groupName});
+        INSERT INTO groups
+        (group_name)
+        VALUES
+        (#{groupName})
 
     </insert>
 
-    <select id="selectGroup" parameterType="int">
+    <select id="selectGroup" parameterType="int" resultType="String">
 
-        SELECT group_name
-        FROM group
-        WHERE id = #{id};
+        SELECT groups
+        FROM group_table
+        WHERE id = #{groupId}
 
     </select>
-
 
 </mapper>

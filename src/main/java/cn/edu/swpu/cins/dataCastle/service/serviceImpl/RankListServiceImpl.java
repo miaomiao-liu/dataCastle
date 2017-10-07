@@ -2,11 +2,13 @@ package cn.edu.swpu.cins.dataCastle.service.serviceImpl;
 
 import cn.edu.swpu.cins.dataCastle.dao.GroupDao;
 import cn.edu.swpu.cins.dataCastle.dao.RankDao;
+import cn.edu.swpu.cins.dataCastle.enums.MatchEnum;
 import cn.edu.swpu.cins.dataCastle.model.view.ScoreRank;
 import cn.edu.swpu.cins.dataCastle.service.RankListService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -19,6 +21,17 @@ public class RankListServiceImpl implements RankListService {
     RankDao rankDao;
     @Autowired
     GroupDao groupDao;
+
+    //上传时添加上传时间
+    @Override
+    public MatchEnum addGroupDate(int groupId, Date date) {
+        if(rankDao.selectRank(groupId) == null){
+            rankDao.addDate(groupId,date);
+            return MatchEnum.ADD_SUCCESS;
+        }
+        rankDao.updateDate(groupId,date);
+        return MatchEnum.UPDATE_SUCCESS;
+    }
 
     @Override
     public List<ScoreRank> scoreList() {

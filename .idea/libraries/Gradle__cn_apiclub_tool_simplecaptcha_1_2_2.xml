@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.apiclub.tool:simplecaptcha:1.2.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.apiclub.tool/simplecaptcha/1.2.2/eeb540f7a1820386588066a3cd400adca60350d9/simplecaptcha-1.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.apiclub.tool/simplecaptcha/1.2.2/63a1e07962908b2598306ea5f6e5e3fd2118c464/simplecaptcha-1.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

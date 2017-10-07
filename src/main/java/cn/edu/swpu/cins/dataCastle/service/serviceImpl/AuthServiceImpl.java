@@ -1,5 +1,8 @@
 package cn.edu.swpu.cins.dataCastle.service.serviceImpl;
 
+import cn.edu.swpu.cins.dataCastle.async.EventModel;
+import cn.edu.swpu.cins.dataCastle.async.EventProducer;
+import cn.edu.swpu.cins.dataCastle.async.EventType;
 import cn.edu.swpu.cins.dataCastle.dao.UserDao;
 import cn.edu.swpu.cins.dataCastle.model.view.LoginUser;
 import cn.edu.swpu.cins.dataCastle.model.view.RegisterUser;
@@ -34,6 +37,8 @@ public class AuthServiceImpl implements AuthService{
     JwtTokenUtil jwtTokenUtil;
     @Autowired
     MailService mailService;
+    @Autowired
+    EventProducer eventProducer;
 
     @Override
     public Map<Boolean,String> addUser(RegisterUser registerUser) {
@@ -56,7 +61,7 @@ public class AuthServiceImpl implements AuthService{
         registerUser.setPassword(encoder.encode(password));
         registerUser.setEnable(0);
         userDao.addUser(registerUser);
-        mailService.registerMail(username,email);
+        eventProducer.fireEvent(new EventModel().setEventType(EventType.REGISTER).setActor(username).setAccept(email));
         return map;
     }
 
