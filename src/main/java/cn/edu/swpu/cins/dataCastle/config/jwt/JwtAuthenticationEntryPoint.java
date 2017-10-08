@@ -1,4 +1,4 @@
-package cn.edu.swpu.cins.dataCastle.config;
+package cn.edu.swpu.cins.dataCastle.config.jwt;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;

@@ -15,8 +15,8 @@
 
     <select id="selectGroup" parameterType="int" resultType="String">
 
-        SELECT groups
-        FROM group_table
+        SELECT group_name
+        FROM groups
         WHERE id = #{groupId}
 
     </select>

@@ -1,4 +1,4 @@
-package cn.edu.swpu.cins.dataCastle.config;
+package cn.edu.swpu.cins.dataCastle.config.jwt;
 
 import cn.edu.swpu.cins.dataCastle.util.JwtTokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;

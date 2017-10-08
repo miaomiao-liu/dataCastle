@@ -1,4 +1,4 @@
-package cn.edu.swpu.cins.dataCastle.config;
+package cn.edu.swpu.cins.dataCastle.config.jwt;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

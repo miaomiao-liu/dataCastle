@@ -10,19 +10,23 @@
         INSERT INTO user
         (username,
         password,
-        email
+        email,
+        enable,
+        frequency
         )VALUES
         (#{username},
          #{password},
-         #{email})
+         #{email},
+         #{enable},
+         #{frequency})
 
     </insert>
 
-    <update id="updateEnable" parameterType="int">
+    <update id="updateEnable">
 
         UPDATE user
         SET enable = #{enable}
-        WHERE id = #{id}
+        WHERE username = #{username}
 
     </update>
 
@@ -44,6 +48,23 @@
 
         UPDATE user
         SET group_id = #{groupId}
+        WHERE username = #{username}
+
+    </update>
+
+    <update id="updateFrequency">
+
+        UPDATE user
+        SET frequency = 0
+        WHERE id > 0
+
+    </update>
+
+
+    <update id="addFrequency">
+
+        UPDATE user
+        SET frequency = frequency + 1
         WHERE username = #{username}
 
     </update>

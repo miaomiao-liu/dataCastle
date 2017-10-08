@@ -8,6 +8,7 @@ public class RegisterUser {
     private String password;
     private String email;
     private int enable;
+    private int frequency;
 
     public RegisterUser() {
     }
@@ -48,5 +49,13 @@ public class RegisterUser {
 
     public void setEnable(int enable) {
         this.enable = enable;
+    }
+
+    public int getFrequency() {
+        return frequency;
+    }
+
+    public void setFrequency(int frequency) {
+        this.frequency = frequency;
     }
 }

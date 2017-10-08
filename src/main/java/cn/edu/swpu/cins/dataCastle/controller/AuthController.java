@@ -28,7 +28,8 @@ public class AuthController {
 
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody RegisterUser registerUser){
-        Map<Boolean,String> map = new HashMap();
+        Map<Boolean,String> map;
+        
         map = authService.addUser(registerUser);
         if(map.isEmpty()) {
             return new ResponseEntity<Object>("注册成功，请激活你的邮箱",HttpStatus.OK);

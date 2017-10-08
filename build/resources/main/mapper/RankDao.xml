@@ -12,7 +12,7 @@
 
     </select>
 
-    <select id="allRankList">
+    <select id="allRankList" resultType="cn.edu.swpu.cins.dataCastle.model.view.ScoreRank">
 
         SELECT *
         FROM rank

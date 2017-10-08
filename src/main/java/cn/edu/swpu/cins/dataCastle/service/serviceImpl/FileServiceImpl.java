@@ -2,6 +2,7 @@ package cn.edu.swpu.cins.dataCastle.service.serviceImpl;
 
 import cn.edu.swpu.cins.dataCastle.dao.UserDao;
 import cn.edu.swpu.cins.dataCastle.enums.MatchEnum;
+import cn.edu.swpu.cins.dataCastle.exception.FileException;
 import cn.edu.swpu.cins.dataCastle.service.FileService;
 import cn.edu.swpu.cins.dataCastle.service.RankListService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,24 +31,42 @@ public class FileServiceImpl implements FileService {
 
     @Override
     public Map<Boolean, String> upload(MultipartFile multipartFile,String username) {
-        int groupId = userDao.selectUser(username).getGroupId();
         Map<Boolean,String> map = new HashMap<>();
-        String path = location + "/" +groupId;
+        if(userDao.selectUser(username).getFrequency() >= 2){
+            map.put(false,"上传次数已达上线！");
+            return map;
+        }
+        int groupId = userDao.selectUser(username).getGroupId();
+        Date date = new Date();
+        String path = checkDir(groupId);
+        path = path + "/" + date;
 
         File file = new File(path);
-        if(file.exists()){
-            //删除已存在文件
-            file.delete();
-        }
+//        if(file.exists()){
+//            //删除已存在文件
+//            file.delete();
+//        }
         try {
             multipartFile.transferTo(file);
-            MatchEnum status= rankListService.addGroupDate(groupId,new Date());
+            userDao.addFrequency(username);
+            MatchEnum status= rankListService.addGroupDate(groupId,date);
             map.put(true,"上传成功" + status);
         } catch (IOException e) {
             e.printStackTrace();
             map.put(true,"上传失败");
         }
         return map;
+    }
+
+    private String checkDir(int groupId){
+        String path = location + "/" + groupId;
+        File dir = new File(path);
+        if (!dir.exists()) {
+            if (!dir.mkdirs()) {
+                throw new FileException("create dir failed");
+            }
+        }
+        return path;
     }
 
 }

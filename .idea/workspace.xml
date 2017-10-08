@@ -2,49 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fdc6df4-10b3-4ce9-934a-aa529c99ce7c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cn_apiclub_tool_simplecaptcha_1_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_alibaba_fastjson_1_2_32.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/async/EventConsumer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/async/EventHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/async/EventModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/async/EventProducer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/async/EventType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/async/handlerImpl/RegisterHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/enums/MatchEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/VerifyCodeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/VerifyCodeServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/util/JedisAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/util/RedisKeyUtil.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/service/ActivityService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/service/serviceImpl/ActivityServiceImpl.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/controller/ActivityController.class" afterPath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/controller/ActivityController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/controller/AuthController.class" afterPath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/controller/AuthController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/dao/RankDao.class" afterPath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/dao/RankDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__c3p0_c3p0_0_9_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_quartz_scheduler_quartz_2_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/quartz/AutowiringSpringBeanJobFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/quartz/MyJob.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/quartz/ScheduleConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/exception/DataCastleException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/exception/FileException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/EnableService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/EnableServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/util/GetUserName.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/config/JwtAuthenticationEntryPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/config/JwtAuthenticationTokenFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/config/WebSecurityConfig.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/JwtAuthenticationEntryPoint.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/jwt/JwtAuthenticationEntryPoint.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/JwtAuthenticationTokenFilter.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/jwt/JwtAuthenticationTokenFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/WebSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/jwt/WebSecurityConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/dao/UserDao.class" afterPath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/dao/UserDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/model/property/User.class" afterPath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/model/property/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/model/view/RegisterUser.class" afterPath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/model/view/RegisterUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/model/view/SignInResult.class" afterPath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/model/view/SignInResult.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/service/FileService.class" afterPath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/service/FileService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/service/serviceImpl/AuthServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/service/serviceImpl/AuthServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/service/serviceImpl/FileServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/service/serviceImpl/FileServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/service/serviceImpl/GroupServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/service/serviceImpl/GroupServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/test/cn/edu/swpu/cins/dataCastle/testDao/AllDao.class" afterPath="$PROJECT_DIR$/build/classes/test/cn/edu/swpu/cins/dataCastle/testDao/AllDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/47e4253c-2ac5-4b6c-b4d9-4b1c3ead8cf4.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/47e4253c-2ac5-4b6c-b4d9-4b1c3ead8cf4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/service/serviceImpl/RankListServiceImpl.class" afterPath="$PROJECT_DIR$/build/classes/main/cn/edu/swpu/cins/dataCastle/service/serviceImpl/RankListServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/dataCastle_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/dataCastle_main.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/dataCastle_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/dataCastle_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/mapper/GroupDao.xml" afterPath="$PROJECT_DIR$/build/resources/main/mapper/GroupDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/mapper/RankDao.xml" afterPath="$PROJECT_DIR$/build/resources/main/mapper/RankDao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/resources/main/mapper/UserDao.xml" afterPath="$PROJECT_DIR$/build/resources/main/mapper/UserDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/AuthController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/AuthController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/MatchController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/MatchController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/RankDao.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/RankDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/RankListService.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/RankListService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/property/User.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/property/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/RegisterUser.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/RegisterUser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/AuthServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/AuthServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/FileServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/FileServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/GroupServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/GroupServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/RankListServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/RankListServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/GroupDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GroupDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/RankDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/RankDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/cn/edu/swpu/cins/dataCastle/testDao/AllDao.java" afterPath="$PROJECT_DIR$/src/test/java/cn/edu/swpu/cins/dataCastle/testDao/AllDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -94,21 +91,8 @@
       <file leaf-file-name="AuthController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/AuthController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-              <folding>
-                <element signature="e#1366#1367#0" expanded="true" />
-                <element signature="e#1430#1431#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/ActivityController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+            <state relative-caret-position="111">
+              <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -117,58 +101,60 @@
       <file leaf-file-name="MatchController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/MatchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="321">
+              <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/FileService.java">
+      <file leaf-file-name="MailServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/MailServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="321">
+              <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/FileServiceImpl.java">
+      <file leaf-file-name="VerifyCodeServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/VerifyCodeServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="43" column="51" lean-forward="false" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+            <state relative-caret-position="531">
+              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RankListService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/RankListService.java">
+      <file leaf-file-name="AuthServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/AuthServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            <state relative-caret-position="232">
+              <caret line="47" column="53" lean-forward="true" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RankDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/RankDao.java">
+      <file leaf-file-name="EnableServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/EnableServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="246">
+              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RankListServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/RankListServiceImpl.java">
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+            <state relative-caret-position="141">
+              <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -177,11 +163,11 @@
       <file leaf-file-name="GroupDao.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/GroupDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state relative-caret-position="285">
+              <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding>
-                <marker date="1507373859061" expanded="true" signature="368:445" ph="INSERT INTO groups... " />
-                <marker date="1507373859061" expanded="true" signature="541:609" ph="SELECT group... group_table" />
+                <marker date="1507452341507" expanded="true" signature="368:445" ph="INSERT INTO groups... " />
+                <marker date="1507452341507" expanded="true" signature="541:608" ph="SELECT group... group_table" />
               </folding>
             </state>
           </provider>
@@ -190,13 +176,31 @@
       <file leaf-file-name="RankDao.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RankDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="270">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
-                <marker date="1507375803682" expanded="true" signature="346:417" ph="SELECT score... " />
-                <marker date="1507375803682" expanded="true" signature="473:499" ph="SELECT * FRO... rank" />
-                <marker date="1507375803682" expanded="true" signature="551:663" ph="INSERT INTO rank... " />
-                <marker date="1507375803682" expanded="true" signature="718:792" ph="UPDATE rank " />
+                <marker date="1507452206438" expanded="true" signature="346:417" ph="SELECT score... " />
+                <marker date="1507452206438" expanded="true" signature="535:561" ph="SELECT * FRO... rank" />
+                <marker date="1507452206438" expanded="true" signature="613:725" ph="INSERT INTO rank... " />
+                <marker date="1507452206438" expanded="true" signature="780:854" ph="UPDATE rank " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+              <folding>
+                <marker date="1507455370100" expanded="true" signature="329:553" ph="INSERT INTO user... " />
+                <marker date="1507455370100" expanded="true" signature="610:689" ph="UPDATE user " />
+                <marker date="1507455370100" expanded="true" signature="828:883" ph="select * fro... user" />
+                <marker date="1507455370100" expanded="true" signature="1023:1072" ph="select * fro... user" />
+                <marker date="1507455370100" expanded="true" signature="1131:1213" ph="UPDATE user " />
+                <marker date="1507455370100" expanded="true" signature="1273:1331" ph="UPDATE user " />
+                <marker date="1507455370100" expanded="true" signature="1389:1475" ph="UPDATE user " />
               </folding>
             </state>
           </provider>
@@ -451,7 +455,7 @@
       <map>
         <entry key="$PROJECT_DIR$/../Springboot-quartz" value="1504703866582" />
         <entry key="$PROJECT_DIR$/../contest" value="1506399416000" />
-        <entry key="$PROJECT_DIR$" value="1507366100307" />
+        <entry key="$PROJECT_DIR$" value="1507448117781" />
         <entry key="$PROJECT_DIR$/../preliminary" value="1506400604000" />
         <entry key="$PROJECT_DIR$/../springboot_redis" value="1502960865597" />
         <entry key="$PROJECT_DIR$/../studentGrade" value="1499449958000" />
@@ -578,57 +582,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/MailService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/JwtAuthenticationEntryPoint.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/JwtAuthenticationTokenFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/JwtUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/property/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/AuthService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/enums/userEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/GroupService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/ActivityServiceIml.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/ActivityService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/ScoreRank.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/MailServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/JwtUserDetailsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/util/JwtTokenUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/util/JwtUserFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/SignInResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/RegisterUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/FileService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/ActivityServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/RankListServiceServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/ActivityController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/GroupIdDate.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/RankDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/RankListService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/enums/MatchEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/RankListServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/FileServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/async/EventType.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/async/EventProducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/async/EventHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/async/EventComsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/async/EventModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/AuthServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/async/handlerImpl/RegisterHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/util/RedisKeyUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/async/EventConsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/VerifyCodeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/AuthController.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/VerifyCodeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/util/JedisAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/GroupDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/GroupServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/cn/edu/swpu/cins/dataCastle/testDao/AllDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/GroupDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/Upload.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/MatchController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/exception/DataCastleException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/exception/FileException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/jwt/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/quartz/AutowiringSpringBeanJobFactory.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/property/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/quartz/MyJob.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/RegisterUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/AuthServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/FileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/quartz/ScheduleConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/ActivityController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/RankDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/GroupDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/RankListServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/EnableService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/util/GetUserName.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/MatchController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/EnableServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/AuthController.java" />
       </list>
     </option>
   </component>
@@ -659,6 +663,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1059,6 +1065,52 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="enums" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dataCastle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dataCastle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="edu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swpu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dataCastle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1112,8 +1164,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1126,9 +1176,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.edu.swpu.cins.dataCastle.util" />
       <recent name="cn.edu.swpu.cins.dataCastle.async" />
       <recent name="cn.edu.swpu.cins.dataCastle.service.serviceImpl" />
       <recent name="cn.edu.swpu.cins.dataCastle.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.DataCastleApplication">
@@ -1606,7 +1660,8 @@
       <workItem from="1507252571379" duration="869000" />
       <workItem from="1507253446244" duration="7000" />
       <workItem from="1507253490995" duration="9957000" />
-      <workItem from="1507360241607" duration="13031000" />
+      <workItem from="1507360241607" duration="15656000" />
+      <workItem from="1507447857604" duration="8806000" />
     </task>
     <servers />
   </component>
@@ -1643,7 +1698,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62848000" />
+    <option name="totallyTimeSpent" value="74279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -1666,11 +1721,11 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26488096" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24404761" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33128363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31591085" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1691,7 +1746,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1700,101 +1755,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.11.RELEASE/c79159035df433ec745c58a1f1a29d7a71e37ad0/spring-webmvc-4.3.11.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="1004" column="0" lean-forward="false" selection-start-line="1004" selection-start-column="0" selection-end-line="1004" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.11.RELEASE/c79159035df433ec745c58a1f1a29d7a71e37ad0/spring-webmvc-4.3.11.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="906" column="0" lean-forward="false" selection-start-line="906" selection-start-column="0" selection-end-line="906" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.11.RELEASE/c79159035df433ec745c58a1f1a29d7a71e37ad0/spring-webmvc-4.3.11.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="115" column="13" lean-forward="false" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.11.RELEASE/81b86c6cddc25feecf0bb2e11df3b7e56bafb806/spring-web-4.3.11.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/java/src.zip!/java/lang/reflect/InvocationTargetException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.3.11.RELEASE/2ec3608b9e6e824fa70c8771536b6dfa3c754385/spring-context-support-4.3.11.RELEASE-sources.jar!/org/springframework/mail/SimpleMailMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/GroupService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/RegisterUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/SignInResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/AuthService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/ScoreDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/GroupIdDate.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/ScoreRank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/enums/MatchEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/async/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1830,34 +1790,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/MailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/util/RedisKeyUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#223#224#0" expanded="false" />
-            <element signature="e#260#261#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/AuthServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="48" column="36" lean-forward="false" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1865,7 +1801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1873,7 +1808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1881,10 +1815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding>
-            <element signature="e#1775#2688#0" expanded="false" />
-            <element signature="e#2687#2688#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1892,7 +1822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1904,50 +1833,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/util/JedisAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
           <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/VerifyCodeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/ccabe146/47e4253c-2ac5-4b6c-b4d9-4b1c3ead8cf4/dataCastle.group">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1956,20 +1857,6 @@
         <state relative-caret-position="0">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1507190571016" expanded="true" signature="329:475" ph="INSERT INTO user... " />
-            <marker date="1507190571016" expanded="true" signature="552:619" ph="UPDATE user " />
-            <marker date="1507190571016" expanded="true" signature="758:813" ph="select * fro... user" />
-            <marker date="1507190571016" expanded="true" signature="953:1002" ph="select * fro... user" />
-            <marker date="1507190571016" expanded="true" signature="1061:1143" ph="UPDATE user " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1988,16 +1875,6 @@
         <state relative-caret-position="435">
           <caret line="38" column="11" lean-forward="false" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/GroupDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2020,18 +1897,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/Upload.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/Upload.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/property/Rank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state relative-caret-position="-26">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/JwtAuthenticationTokenFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/exception/DataCastleException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#184#185#0" expanded="false" />
+            <element signature="e#207#208#0" expanded="false" />
+            <element signature="e#257#258#0" expanded="false" />
+            <element signature="e#287#288#0" expanded="false" />
+            <element signature="e#354#355#0" expanded="false" />
+            <element signature="e#391#392#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#470#471#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/exception/FileException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#175#176#0" expanded="false" />
+            <element signature="e#198#199#0" expanded="false" />
+            <element signature="e#242#243#0" expanded="false" />
+            <element signature="e#272#273#0" expanded="false" />
+            <element signature="e#333#334#0" expanded="false" />
+            <element signature="e#370#371#0" expanded="false" />
+            <element signature="e#415#416#0" expanded="false" />
+            <element signature="e#443#444#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/jwt/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/jwt/JwtAuthenticationTokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/jwt/JwtAuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="39" column="57" lean-forward="false" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/quartz/AutowiringSpringBeanJobFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -2044,74 +1988,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/property/Rank.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/property/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="135">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#1190#1191#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1269#1270#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/RegisterUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+          <folding>
+            <element signature="e#1110#1111#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#1199#1200#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/FileServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="43" column="51" lean-forward="false" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+        <state relative-caret-position="660">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/quartz/MyJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/config/quartz/ScheduleConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="39" column="37" lean-forward="false" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/RankListService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        <state relative-caret-position="165">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/RankListServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/model/view/ScoreRank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        <state relative-caret-position="195">
+          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/RankDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="195">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/GroupDao.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/GroupDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding>
-            <marker date="1507373859061" expanded="true" signature="368:445" ph="INSERT INTO groups... " />
-            <marker date="1507373859061" expanded="true" signature="541:609" ph="SELECT group... group_table" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RankDao.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/RankListServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <marker date="1507375803682" expanded="true" signature="346:417" ph="SELECT score... " />
-            <marker date="1507375803682" expanded="true" signature="473:499" ph="SELECT * FRO... rank" />
-            <marker date="1507375803682" expanded="true" signature="551:663" ph="INSERT INTO rank... " />
-            <marker date="1507375803682" expanded="true" signature="718:792" ph="UPDATE rank " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/MatchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="531">
+          <caret line="69" column="28" lean-forward="false" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -2119,19 +2082,135 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/ActivityController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <element signature="e#678#679#0" expanded="false" />
+            <element signature="e#728#729#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/enums/MatchEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/EnableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/util/GetUserName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/GroupDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <marker date="1507452341507" expanded="true" signature="368:445" ph="INSERT INTO groups... " />
+            <marker date="1507452341507" expanded="true" signature="541:608" ph="SELECT group... group_table" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/EnableServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/MatchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RankDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1507452206438" expanded="true" signature="346:417" ph="SELECT score... " />
+            <marker date="1507452206438" expanded="true" signature="535:561" ph="SELECT * FRO... rank" />
+            <marker date="1507452206438" expanded="true" signature="613:725" ph="INSERT INTO rank... " />
+            <marker date="1507452206438" expanded="true" signature="780:854" ph="UPDATE rank " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <marker date="1507455370100" expanded="true" signature="329:553" ph="INSERT INTO user... " />
+            <marker date="1507455370100" expanded="true" signature="610:689" ph="UPDATE user " />
+            <marker date="1507455370100" expanded="true" signature="828:883" ph="select * fro... user" />
+            <marker date="1507455370100" expanded="true" signature="1023:1072" ph="select * fro... user" />
+            <marker date="1507455370100" expanded="true" signature="1131:1213" ph="UPDATE user " />
+            <marker date="1507455370100" expanded="true" signature="1273:1331" ph="UPDATE user " />
+            <marker date="1507455370100" expanded="true" signature="1389:1475" ph="UPDATE user " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/MailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/VerifyCodeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/service/serviceImpl/AuthServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="47" column="53" lean-forward="true" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/edu/swpu/cins/dataCastle/controller/AuthController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="34" column="15" lean-forward="true" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-          <folding>
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1430#1431#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="111">
+          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

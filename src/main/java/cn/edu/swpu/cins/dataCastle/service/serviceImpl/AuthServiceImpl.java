@@ -60,6 +60,7 @@ public class AuthServiceImpl implements AuthService{
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         registerUser.setPassword(encoder.encode(password));
         registerUser.setEnable(0);
+        registerUser.setFrequency(0);
         userDao.addUser(registerUser);
         eventProducer.fireEvent(new EventModel().setEventType(EventType.REGISTER).setActor(username).setAccept(email));
         return map;

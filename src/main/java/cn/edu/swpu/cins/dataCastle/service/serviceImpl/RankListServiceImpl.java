@@ -40,6 +40,7 @@ public class RankListServiceImpl implements RankListService {
             scoreRank.setGroupName(groupDao.selectGroup(scoreRank.getGroupId()));
         }
         scoreRankList = Ranking(scoreRankList);
+        rank(scoreRankList);
         return scoreRankList;
     }
 
@@ -48,7 +49,7 @@ public class RankListServiceImpl implements RankListService {
         int n = scoreRankList.size();
         for(int i = 0; i < n - 1; i++){
             for (int j = 0; j < n - 1 - i; j++){
-                if(scoreRankList.get(j).getScore() > scoreRankList.get(j).getScore()){
+                if(scoreRankList.get(j).getScore() < scoreRankList.get(j+1).getScore()){
                     swap(scoreRankList,j,j + 1);
                 }
             }
@@ -67,7 +68,7 @@ public class RankListServiceImpl implements RankListService {
     public void rank(List<ScoreRank> scoreRankList) {
         int n = scoreRankList.size();
         for (int i = 0; i < n; i++) {
-            scoreRankList.get(i).setId(i++);
+            scoreRankList.get(i).setId(i+1);
         }
     }
 
