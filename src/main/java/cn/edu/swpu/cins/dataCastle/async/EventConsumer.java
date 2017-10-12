@@ -12,6 +12,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Service;
 
+import javax.mail.MessagingException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -65,7 +66,11 @@ public class EventConsumer implements InitializingBean,ApplicationContextAware{
                             continue;
                         }
                         for (EventHandler handler : config.get(model.getEventType())) {
-                            handler.doHandle(model);
+                            try {
+                                handler.doHandle(model);
+                            } catch (MessagingException e) {
+                                logger.error(e.getMessage());
+                            }
                         }
                     }
                 }

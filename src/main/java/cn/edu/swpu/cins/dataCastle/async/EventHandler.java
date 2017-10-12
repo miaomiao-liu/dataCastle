@@ -1,5 +1,6 @@
 package cn.edu.swpu.cins.dataCastle.async;
 
+import javax.mail.MessagingException;
 import java.util.List;
 
 /**
@@ -7,7 +8,7 @@ import java.util.List;
  */
 public interface EventHandler {
 
-    void doHandle(EventModel eventModel);
+    void doHandle(EventModel eventModel) throws MessagingException;
 
     List<EventType> getSupportEventTypes();
 }

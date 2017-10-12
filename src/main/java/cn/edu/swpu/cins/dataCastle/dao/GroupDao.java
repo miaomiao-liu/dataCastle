@@ -15,4 +15,11 @@ public interface GroupDao {
 
     String selectGroup(int groupId);
 
+    int selectFrequency(int groupId);
+
+    int addFrequency(int groupId);
+
+    int updateFrequency();
+
+
 }

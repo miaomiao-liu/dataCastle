@@ -11,7 +11,7 @@ spring:
   mail:
       host: smtp.163.com
       username: 18280351947@163.com
-      password: xiangni2012
+      password: miaomiao123
       properties:
        mail:
         smtp:
@@ -21,6 +21,7 @@ spring:
           required: true
 
 server:
+  host: 127.0.0.1
   port: 8080
 
 
@@ -41,3 +42,7 @@ jwt:
 
 dataCastle:
   location: /home/miaomiao/download/multipartFile
+  path:
+    auth:
+      enable: auth/enable
+

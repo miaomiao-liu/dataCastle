@@ -12,7 +12,7 @@ public class User {
     private String password;
     private String email;
     private int enable;
-    private int frequency;
+
 
     public User() {
     }
@@ -65,11 +65,4 @@ public class User {
         this.enable = enable;
     }
 
-    public int getFrequency() {
-        return frequency;
-    }
-
-    public void setFrequency(int frequency) {
-        this.frequency = frequency;
-    }
 }

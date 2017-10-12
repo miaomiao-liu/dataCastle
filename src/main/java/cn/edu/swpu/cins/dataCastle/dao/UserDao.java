@@ -16,7 +16,7 @@ public interface UserDao {
     int addUser(RegisterUser registerUser);
 
     int updateEnable(@Param("enable")int enable,
-                     @Param("username")String username);
+                     @Param("email")String email);
 
     User existEmail(String email);
 
@@ -25,7 +25,4 @@ public interface UserDao {
     int updateGroupId(@Param("username") String username,
                       @Param("groupId") int groupId);
 
-    int updateFrequency();
-
-    int addFrequency(String username);
 }

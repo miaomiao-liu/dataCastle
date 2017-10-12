@@ -37,6 +37,7 @@ public class VerifyCodeServiceImpl implements VerifyCodeService {
                 .addText().addBackground(new GradiatedBackgroundProducer(Color.ORANGE, Color.WHITE))
                 .gimp(new FishEyeGimpyRenderer())
                 .build();
+
         System.out.println("验证码为    " + captcha.getAnswer());
         //将验证码以<key,value>形式缓存到redis
         jedisAdapter.setex(uuid, captchaExpires, captcha.getAnswer());

@@ -11,7 +11,7 @@ import java.util.Map;
  */
 public interface AuthService {
 
-    Map<Boolean,String> addUser(RegisterUser registerUser);
+    Map<Boolean,String> addUser(RegisterUser registerUser,String token);
 
     SignInResult login(LoginUser loginUser);
 

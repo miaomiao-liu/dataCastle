@@ -1,5 +1,6 @@
 package cn.edu.swpu.cins.dataCastle.service.serviceImpl;
 
+import cn.edu.swpu.cins.dataCastle.dao.GroupDao;
 import cn.edu.swpu.cins.dataCastle.dao.UserDao;
 import cn.edu.swpu.cins.dataCastle.enums.MatchEnum;
 import cn.edu.swpu.cins.dataCastle.exception.FileException;
@@ -28,15 +29,18 @@ public class FileServiceImpl implements FileService {
     UserDao userDao;
     @Autowired
     RankListService rankListService;
+    @Autowired
+    GroupDao groupDao;
 
     @Override
     public Map<Boolean, String> upload(MultipartFile multipartFile,String username) {
         Map<Boolean,String> map = new HashMap<>();
-        if(userDao.selectUser(username).getFrequency() >= 2){
-            map.put(false,"上传次数已达上线！");
+        int groupId = userDao.selectUser(username).getGroupId();
+        if( groupDao.selectFrequency(groupId) >= 2){
+            map.put(false,"上传次数已达上限！");
             return map;
         }
-        int groupId = userDao.selectUser(username).getGroupId();
+
         Date date = new Date();
         String path = checkDir(groupId);
         path = path + "/" + date;
@@ -48,7 +52,7 @@ public class FileServiceImpl implements FileService {
 //        }
         try {
             multipartFile.transferTo(file);
-            userDao.addFrequency(username);
+            groupDao.addFrequency(groupId);
             MatchEnum status= rankListService.addGroupDate(groupId,date);
             map.put(true,"上传成功" + status);
         } catch (IOException e) {

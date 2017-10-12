@@ -7,6 +7,7 @@ import cn.edu.swpu.cins.dataCastle.service.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.mail.MessagingException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -20,10 +21,11 @@ public class RegisterHandler implements EventHandler{
     MailService mailService;
 
     @Override
-    public void doHandle(EventModel eventModel) {
+    public void doHandle(EventModel eventModel) throws MessagingException {
         String username = eventModel.getActor();
         String email = eventModel.getAccept();
-        mailService.registerMail(username,email);
+        String token = eventModel.getExts().get("token");
+        mailService.registerMail(username,email,token);
     }
 
     @Override

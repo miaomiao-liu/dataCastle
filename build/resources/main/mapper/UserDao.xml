@@ -26,7 +26,7 @@
 
         UPDATE user
         SET enable = #{enable}
-        WHERE username = #{username}
+        WHERE email = #{email}
 
     </update>
 
@@ -52,21 +52,7 @@
 
     </update>
 
-    <update id="updateFrequency">
-
-        UPDATE user
-        SET frequency = 0
-        WHERE id > 0
-
-    </update>
 
 
-    <update id="addFrequency">
-
-        UPDATE user
-        SET frequency = frequency + 1
-        WHERE username = #{username}
-
-    </update>
 
 </mapper>

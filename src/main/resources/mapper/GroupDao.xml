@@ -21,4 +21,29 @@
 
     </select>
 
+    <select id="selectFrequency" parameterType="int" resultType="int">
+
+        SELECT frequency
+         FROM groups
+         WHERE id = #{groupId}
+
+    </select>
+
+
+    <update id="addFrequency">
+
+        UPDATE groups
+        SET frequency = frequency + 1
+        WHERE  id= #{groupId}
+
+    </update>
+
+    <update id="updateFrequency">
+
+        UPDATE groups
+        SET frequency = 0
+        WHERE id > 0
+
+    </update>
+
 </mapper>

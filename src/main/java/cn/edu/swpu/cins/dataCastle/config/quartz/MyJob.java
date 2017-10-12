@@ -1,5 +1,6 @@
 package cn.edu.swpu.cins.dataCastle.config.quartz;
 
+import cn.edu.swpu.cins.dataCastle.dao.GroupDao;
 import cn.edu.swpu.cins.dataCastle.dao.UserDao;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
@@ -21,12 +22,13 @@ public class MyJob implements Job,Serializable{
     private static final Logger logger= LoggerFactory.getLogger(MyJob.class);
 
     @Autowired
-    UserDao userDao;
+    GroupDao groupDao;
 
     @Override
     public void execute(JobExecutionContext context) throws JobExecutionException {
     try {
-        userDao.updateFrequency();
+        groupDao.updateFrequency();
+        logger.info("更新成功！");
     } catch (Exception e) {
         logger.error("更新失败！");
     }

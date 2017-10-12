@@ -7,6 +7,7 @@ public class Group {
 
     private int id;
     private String groupName;
+    private int frequency;
 
     public Group(String groupName) {
         this.groupName = groupName;
@@ -29,5 +30,13 @@ public class Group {
 
     public void setGroupName(String groupName) {
         this.groupName = groupName;
+    }
+
+    public int getFrequency() {
+        return frequency;
+    }
+
+    public void setFrequency(int frequency) {
+        this.frequency = frequency;
     }
 }

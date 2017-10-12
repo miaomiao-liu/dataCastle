@@ -61,6 +61,20 @@ public class JedisAdapter implements InitializingBean{
         }
     }
 
+    public String get(String key){
+        Jedis jedis = null;
+        try {
+            jedis = pool.getResource();
+            return jedis.get(key);
+        }catch (Exception e){
+            logger.error("发生异常"+e.getMessage());
+            return null;
+        }finally {
+            if(jedis != null){
+                jedis.close();
+            }
+        }
+    }
 
     public boolean  sismember(String key,String value){
         Jedis jedis = null;
